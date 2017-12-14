@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随便果代理</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-table.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body onclick="init()">
+    <!--<div class="xlk">-->
+        <!--<div class="content">-->
+            <!--<div class="select">-->
+                <!--<p>请选择代理</p>-->
+                <!--<ul>-->
+                    <!--<li data-value="VIP代理" onclick="Vip()">VIP代理</li>-->
+                    <!--<li data-value="市级代理" onclick="Sjdl()">市级代理</li>-->
+                    <!--<li data-value="省级代理" onclick="sjdls()">省级代理</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+    <p style="display: block;width: 0px;height: 50px;"></p>
+    <p style="display: block;width: 0px;height: 50px;"></p>
+    <table data-toggle="table" data-url="json/Vip.json" data-show-toggle="true" id="VipTable">
+            <thead>
+                <tr>
+                    <th data-field="AgencyLevel">代理级别</th>
+                    <th data-field="price">价差</th>
+                    <th data-field="ProfitMargin">利润率</th>
+                    <th data-field="AmountOfProfit">利润额</th>
+                    <th data-field="Profit">利润</th>
+                </tr>
+            </thead>
+        </table>
+    <p style="display: block;width: 0px;height: 50px;"></p>
+    <table data-toggle="table" data-url="json/Sjdl.json" data-show-toggle="true" id="SjdlTable">
+        <thead>
+        <tr>
+            <th data-field="AgencyLevel">代理级别</th>
+            <th data-field="price_1">零售价差</th>
+            <th data-field="price_2">批发价差</th>
+            <th data-field="ProfitMargin_1">利润率</th>
+            <th data-field="ProfitMargin_2">批发利润率</th>
+            <th data-field="AmountOfProfit">批发利润额</th>
+            <th data-field="Profit">利润</th>
+        </tr>
+        </thead>
+    </table>
+    <p style="display: block;width: 0px;height: 50px;"></p>
+    <table data-toggle="table" data-url="json/sjdls.json" data-show-toggle="true" id="sjdlsTable">
+        <thead>
+        <tr>
+            <th data-field="AgencyLevel">代理级别</th>
+            <th data-field="price_1">零售价差</th>
+            <th data-field="price_2">招VIP价差</th>
+            <th data-field="price_3">招市级价差</th>
+            <th data-field="ProfitMargin_1">零售利润率</th>
+            <th data-field="ProfitMargin_2">招VIP利润率</th>
+            <th data-field="ProfitMargin_3">招市级利润率</th>
+            <th data-field="AmountOfProfit_1">招VIP利润额</th>
+            <th data-field="AmountOfProfit_2">招市级利润额</th>
+            <th data-field="Profit">利润</th>
+        </tr>
+        </thead>
+    </table>
+    <p style="display: block;width: 0px;height: 50px"></p>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-table.js"></script>
+    <!-- put your locale files after bootstrap-table.js -->
+    <script src="js/bootstrap-table-zh-CN.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
